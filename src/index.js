@@ -3,10 +3,16 @@ import ReactDom from 'react-dom'
 import React from 'react'
 
 import Primeiro from './components/basicos/Primeiro'
+import ComParametro from './components/basicos/ComParametro'
 
 ReactDom.render(
-    <div>
-        <Primeiro></Primeiro>
+    <div id="app">
+        
+        <Primeiro/>
+
+        <ComParametro titulo="Situação do Aluno" 
+        aluno="Pedro Cássio" nota={ 9.5 }/>
+        
     </div>,
     document.getElementById('root')
 );
